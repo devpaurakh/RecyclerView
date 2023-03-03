@@ -32,9 +32,7 @@ public class MainActivity extends AppCompatActivity {
         arrayListOfProfiles.add(new ProfilePojo(R.mipmap.ic_ten, "Sita Sargun", "Data Analyst", R.drawable.ic_delete));
         arrayListOfProfiles.add(new ProfilePojo(R.mipmap.ic_ten, "Arjun", "Data Developer", R.drawable.ic_delete));
         arrayListOfProfiles.add(new ProfilePojo(R.mipmap.ic_seven, "Paurakh Saud", "Section Chief", R.drawable.ic_delete));
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         ProfileRecyclerAdapter adapter = new ProfileRecyclerAdapter(this, arrayListOfProfiles);
         recyclerView.setAdapter(adapter);
-        recyclerView.setLayoutManager(layoutManager);
     }
 }
